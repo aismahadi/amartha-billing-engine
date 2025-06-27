@@ -1,7 +1,7 @@
 # Amartha Billing Engine
 
-To run the program, please go to "./main" directory and execute this command in terminal :
-`go run *`
+To run the program, please execute this command in terminal :
+`go run ./main`
 
 For testing purpose, the programmer made some commands executable from terminal.
 Those commands are :
