@@ -1,10 +1,13 @@
 # Amartha Billing Engine
 
+To run the program, please go to "./main" directory and execute this command in terminal :
+`go run *`
+
 For testing purpose, the programmer made some commands executable from terminal.
 Those commands are :
 
 **help**
-- show all avaibale commands
+- show all available commands
 
 **add_customer <name>**
 - add customer to Amartha Billing Engine
