@@ -63,13 +63,16 @@ func (loan *Loan) MakePayment(amount float64) {
 		return
 	}
 	var requiredAmount float64 = float64(loan.GetMissedWeeksOfPayment()+1) * weeklyPayment
-	if amount == 0 && loan.Week == int(total_loan/weeklyPayment) {
+	deadline := loan.Week == int(total_loan/weeklyPayment)
+	if amount == 0 && deadline {
 		fmt.Printf("MakePayment: failed -> This week is the deadline, must be settled (Required %.2f)\n", requiredAmount)
 		return
 	}
 	if amount == 0 || amount == requiredAmount {
 		loan.Payments[loan.Week-1] = NewPayment(loan, amount)
-		loan.Week++
+		if !deadline {
+			loan.Week++
+		}
 		loan.Outstanding = loan.GetOutstanding()
 		if loan.Outstanding == 0.0 {
 			loan.Status = "Settled"

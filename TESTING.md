@@ -35,3 +35,99 @@ Those commands are :
 
 **exit**
 - exit Amartha Billing Engine
+
+### Example :
+```
+add_customer Ismahadi
+make_loan 1
+make_payment 1 1 110000
+make_payment 1 1 0
+make_payment 1 1 0
+get_outstanding 1 1
+get_missed_weeks_of_payment 1 1
+is_delinquent 1 1
+make_payment 1 1 330000
+is_delinquent 1 1
+add_customer Resyada
+make_loan 2
+make_payment 2 1 110000
+make_payment 2 1 0
+make_payment 2 1 0
+is_delinquent 2 1
+make_payment 2 1 110000
+make_payment 2 1 220000
+make_payment 2 1 330000
+add_customer Pratama
+make_loan 3
+make_payment 3 1 110000
+make_payment 3 1 0
+make_payment 3 1 0
+make_payment 3 1 0
+make_payment 3 1 0
+make_payment 3 1 550000
+make_loan 3
+make_payment 3 2 0
+make_payment 3 2 220000
+make_payment 3 2 110000
+is_delinquent 3 2
+make_payment 3 2 0
+make_payment 3 2 0
+is_delinquent 3 2
+show_report
+show_customer 1
+show_customer 2
+show_customer 3
+make_payment 3 2 330000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 110000
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+make_payment 3 2 0
+show_report
+make_payment 3 2 1100000
+show_report
+```
+You also can copy and paste those example commands in terminal after the program started
